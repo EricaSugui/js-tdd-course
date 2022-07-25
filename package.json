@@ -4,11 +4,10 @@
   "description": "Nossa biblioteca do curso de JS com TDD na prática.",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/eslint src/*.js && exit 1",
+    "test": "npm run lint",
     "lint": "./node_modules/.bin/eslint src/*.js",
     "prepare": "husky install"
   },
-  "husky": { "hooks": { "pre-push": "npm run lint" } },
   "repository": {
     "type": "git",
     "url": "(https://github.com/EricaSugui/js-tdd-course.git)"
